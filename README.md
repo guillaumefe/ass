@@ -153,18 +153,15 @@ Check if the tool is installed on the system in the `install_tools` function.
 def install_tools():
     tools = {
         # Existing tools...
-        "newtool": "newtool_command"
+        "newtool": {
+            "name": "newtool",
+            "install_cmd": {
+                "linux": "sudo apt-get install -y newtool",
+                "darwin": "brew install newtool",
+                "windows": "choco install newtool"
+            }
+        }
     }
-    for tool_name, command in tools.items():
-        if not is_tool_installed(command):
-            print(f"{tool_name} is not installed. Please install it manually.")
-            # Optionally, you can automate the installation:
-            # if platform.system() == 'Linux':
-            #     os.system("sudo apt-get install newtool")
-            # elif platform.system() == 'Darwin':
-            #     os.system("brew install newtool")
-            # elif platform.system() == 'Windows':
-            #     os.system("choco install newtool")
 ```
 
 **Alternative: Automate Installation**
