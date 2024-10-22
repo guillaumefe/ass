@@ -459,8 +459,8 @@ def install_tools():
         "sqlmap": {
             "name": "sqlmap",
             "install_cmd": {
-                "darwin": "sudo apt-get install -y sqlmap",
-                "macos": "brew install sqlmap",
+                "linux": "sudo apt-get install -y sqlmap",
+                "darwin": "brew install sqlmap",
                 "windows": "choco install sqlmap"
             }
         }
