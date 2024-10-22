@@ -7,7 +7,7 @@ TOOLS_CONFIG = {
     # Existing tools...
     "shodan": {
         "type": "url",
-        "description": "Shodan Search Tool",
+        "description": "(Shodan) IoT Search Tool",
         "options": [
             {
                 "name": "query",
