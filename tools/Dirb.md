@@ -73,11 +73,7 @@ def install_tools():
             "name": "dirb",
             "install_cmd": {
                 "linux": "sudo apt-get install -y dirb",
-                "darwin": [
-                    "curl -L https://sourceforge.net/projects/dirb/files/dirb/2.22/dirb222.tar.gz/download -o dirb222.tar.gz",
-                    "tar xvzf dirb222.tar.gz",
-                    "cd dirb222 && ./configure && make && sudo make install"
-                ],
+                "darwin": "curl -L https://sourceforge.net/projects/dirb/files/dirb/2.22/dirb222.tar.gz/download -o dirb222.tar.gz && tar xvzf dirb222.tar.gz && cd dirb222 && ./configure --prefix=$HOME/local && make && make install",
                 "windows": "choco install dirb"
             }
         }
