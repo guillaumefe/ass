@@ -215,7 +215,7 @@ html_template = """
 
         <form id="entryForm" class="mt-4">
             <div class="form-group">
-                <label for="entry">Enter an IP or URL:</label>
+                <label for="entry">Enter an IPv4 or URL (http|https):</label>
                 <input type="text" class="form-control" id="entry" name="entry" placeholder="e.g., 192.168.1.1 or http://example.com" required>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
