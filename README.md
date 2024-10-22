@@ -78,7 +78,7 @@ TOOLS_CONFIG = {
     # Existing tools...
     "newtool": {
         "type": "ip",  # or 'url', depending on the target
-        "description": "New Tool Description",
+        "description": "(Newtool) New Tool Description",
         "options": [
             {
                 "name": "parameter_name",
