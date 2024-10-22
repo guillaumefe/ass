@@ -5,7 +5,7 @@ TOOLS_CONFIG = {
     # Existing tools...
     "nuclei": {
         "type": "url",
-        "description": "Vulnerability Scanner",
+        "description": "(Nuclei) Vulnerability Scanner",
         "options": [
             {
                 "name": "target",
