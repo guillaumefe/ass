@@ -5,7 +5,7 @@ TOOLS_CONFIG = {
     # Existing tools...
     "httpx": {
         "type": "url",
-        "description": "HTTP Probing Tool",
+        "description": "(HTTPX) HTTP Probing Tool",
         "options": [
             {
                 "name": "target",
