@@ -292,7 +292,7 @@ TOOLS_COMMANDS = {
 ```python
 elif scan_type == 'masscan':
     args = []
-    target = ip  # Masscan operates on IP addresses
+    target = ip  # Masscan operates on IP addresses. The ip parameter contains the client's IP address, so we need to use it directly.
     if 'ports' in data and data['ports']:
         args.extend(['-p', data['ports']])
     if 'rate' in data and data['rate']:
@@ -306,11 +306,15 @@ elif scan_type == 'masscan':
 def install_tools():
     tools = {
         # Existing tools...
-        "masscan": "masscan"
+        "masscan": {
+            "name": "masscan",
+            "install_cmd": {
+                "linux": "sudo apt-get install -y masscan",
+                "macos": "brew install masscan",
+                "windows": "choco install masscan"
+            }
+        }
     }
-    for tool_name, command in tools.items():
-        if not is_tool_installed(command):
-            print(f"{tool_name} is not installed. Please install it manually.")
 ```
 
 #### **5. Test the Tool**
