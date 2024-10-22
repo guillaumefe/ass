@@ -5,7 +5,7 @@ TOOLS_CONFIG = {
     # Existing tools...
     "censys": {
         "type": "ip",
-        "description": "IP Information and Security Scanner",
+        "description": "(Censys) IP Information and Security Scanner",
         "options": [
             {
                 "name": "ip",
