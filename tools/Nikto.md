@@ -3,7 +3,7 @@
 ```python
 "nikto": {
     "type": "url",
-    "description": "Web Vulnerability Scanner (Nikto)",
+    "description": "(Nikto) Web Vulnerability Scanner",
     "options": [
         {
             "name": "ssl",
