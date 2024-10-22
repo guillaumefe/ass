@@ -7,7 +7,7 @@ TOOLS_CONFIG = {
     # Existing tools...
     "theharvester": {
         "type": "url",
-        "description": "Email and subdomain OSINT Tool",
+        "description": "(TheHarvester) Email and subdomain OSINT Tool",
         "options": [
             {
                 "name": "domain",
