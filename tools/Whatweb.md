@@ -3,7 +3,7 @@
 ```python
 "whatweb": {
     "type": "url",
-    "description": "Website Fingerprinting Tool (WhatWeb)",
+    "description": "(WhatWeb) Website Fingerprinting Tool",
     "options": [
         {
             "name": "aggression",
