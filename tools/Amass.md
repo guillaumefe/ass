@@ -7,7 +7,7 @@ TOOLS_CONFIG = {
     # Existing tools...
     "amass": {
         "type": "url",
-        "description": "Subdomain Enumeration and Network Mapping Tool",
+        "description": "(Amass) Subdomain Enumeration and Network Mapping Tool",
         "options": [
             {
                 "name": "domains",
