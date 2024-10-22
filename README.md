@@ -310,7 +310,7 @@ def install_tools():
             "name": "masscan",
             "install_cmd": {
                 "linux": "sudo apt-get install -y masscan",
-                "macos": "brew install masscan",
+                "darwin": "brew install masscan",
                 "windows": "choco install masscan"
             }
         }
