@@ -5,7 +5,7 @@ TOOLS_CONFIG = {
     # Existing tools...
     "subfinder": {
         "type": "url",
-        "description": "Subdomain Enumeration Tool",
+        "description": "(Subfinder) Subdomain Enumeration Tool",
         "options": [
             {
                 "name": "domains",
