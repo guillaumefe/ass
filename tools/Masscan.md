@@ -3,7 +3,7 @@
 ```python
 "masscan": {
     "type": "ip",
-    "description": "Fast Port Scanner (Masscan)",
+    "description": "(Masscan) Fast Port Scanner",
     "options": [
         {
             "name": "ports",
