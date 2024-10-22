@@ -25,7 +25,7 @@ def is_running_as_root():
 TOOLS_CONFIG = {
     "nmap": {
         "type": "ip",
-        "description": "Port Scan",
+        "description": "(Nmap) Port Scan",
         "options": [
             {
                 "name": "ports",
@@ -72,7 +72,7 @@ TOOLS_CONFIG = {
     },
     "gobuster": {
         "type": "url",
-        "description": "File/Directory Scan",
+        "description": "(Gobuster) File/Directory Scan",
         "options": [
             {
                 "name": "wordlist",
@@ -98,7 +98,7 @@ TOOLS_CONFIG = {
     },
     "sqlmap": {
         "type": "url",
-        "description": "SQL Injection Scan",
+        "description": "(SQLmap) SQL Injection Scan",
         "options": [
             {
                 "name": "risk",
