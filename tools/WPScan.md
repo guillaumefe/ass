@@ -3,7 +3,7 @@
 ```python
 "wpscan": {
     "type": "url",
-    "description": "WordPress Security Scanner (WPScan)",
+    "description": "(WPScan) WordPress Security Scanner",
     "options": [
         {
             "name": "api_token",
