@@ -1,13 +1,11 @@
-#### Sublist3r
-
 #### Step 1: Update `TOOLS_CONFIG`
 
-\```python
+```python
 TOOLS_CONFIG = {
     # Existing tools...
     "sublist3r": {
         "type": "url",
-        "description": "Subdomain Enumeration Tool",
+        "description": "(Sublist3r) Subdomain Enumeration Tool",
         "options": [
             {
                 "name": "domains",
@@ -19,20 +17,20 @@ TOOLS_CONFIG = {
         ]
     }
 }
-\```
+```
 
 #### Step 2: Add the Tool Command in `TOOLS_COMMANDS`
 
-\```python
+```python
 TOOLS_COMMANDS = {
     # Existing tools...
     "sublist3r": lambda args: ["sublist3r", "-d"] + args
 }
-\```
+```
 
 #### Step 3: Handle Input Formatting in `handle_scan`
 
-\```python
+```python
 elif scan_type == 'sublist3r':
     args = []
     target = data.get('domains')
@@ -40,11 +38,11 @@ elif scan_type == 'sublist3r':
         args.append(target)
     else:
         emit('log_message', "No domain provided for sublist3r scan.")
-\```
+```
 
 #### Step 4: Ensure the Tool is Installed
 
-\```python
+```python
 def install_tools():
     tools = {
         # Existing tools...
@@ -57,4 +55,4 @@ def install_tools():
             }
         }
     }
-\```
+```
