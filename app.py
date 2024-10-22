@@ -343,7 +343,7 @@ html_template = """
                 } else if (option.type === 'checkbox') {
                     optionHTML = `
                         <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="${option.name}" name="${option.name}" disabled="${option.disabled}">
+                            <input type="checkbox" class="form-check-input" id="${option.name}" name="${option.name}" ${option.disabled}>
                             <label class="form-check-label" for="${option.name}">${option.label}</label>
                             <small class="form-text text-muted">${option.explanation}</small>
                         </div>
