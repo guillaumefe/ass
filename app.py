@@ -465,9 +465,21 @@ def install_tools():
             }
         }
     }
-    for tool_name, command in tools.items():
-        if not is_tool_installed(command):
-            print(f"{tool_name} is not installed. Please install it manually.")
+    for tool_name, tool_info in tools.items():
+        # Vérifiez si l'outil est installé
+        if not is_tool_installed(tool_info['name']):
+            platform_name = platform.system().lower()
+            install_cmd = tool_info['install_cmd'].get(platform_name)
+
+            if install_cmd:
+                print(f"{tool_name} is not installed. Attempting to install...")
+                try:
+                    subprocess.run(install_cmd, shell=True, check=True)
+                    print(f"{tool_name} installed successfully.")
+                except subprocess.CalledProcessError:
+                    print(f"Failed to install {tool_name}. Please install it manually.")
+            else:
+                print(f"{tool_name} installation command not available for this platform. Please install it manually.")
 
 def format_input(user_input):
     if user_input.startswith(('http://', 'https://')):
