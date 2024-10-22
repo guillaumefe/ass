@@ -5,7 +5,7 @@ TOOLS_CONFIG = {
     # Existing tools...
     "anew": {
         "type": "url",
-        "description": "Unique URL Finding Tool",
+        "description": "(Anew) Unique URL Finding Tool",
         "options": [
             {
                 "name": "urls",
