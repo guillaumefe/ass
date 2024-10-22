@@ -5,7 +5,7 @@ TOOLS_CONFIG = {
     # Existing tools...
     "xsstrike": {
         "type": "url",
-        "description": "Cross-Site Scripting (XSS) Detection Tool",
+        "description": "(XSStrike) Cross-Site Scripting Detection Tool",
         "options": [
             {
                 "name": "url",
