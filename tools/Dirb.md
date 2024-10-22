@@ -5,7 +5,7 @@ TOOLS_CONFIG = {
     # Existing tools...
     "dirb": {
         "type": "url",
-        "description": "Directory Scanner",
+        "description": "(Dirb) Directory Scanner",
         "options": [
             {
                 "name": "wordlist",
