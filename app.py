@@ -222,6 +222,7 @@ html_template = """
         </form>
 
         <div id="testForms" style="display:none;">
+            <br />
             <h3 id="testTitle"></h3>
             <form id="scanForm" class="mt-4">
                 <input type="hidden" id="scan_entry" name="entry">
