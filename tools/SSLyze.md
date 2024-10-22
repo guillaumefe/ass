@@ -3,7 +3,7 @@
 ```python
 "sslyze": {
     "type": "url",
-    "description": "SSL/TLS Configuration Scanner (SSLyze)",
+    "description": "(SSLyze) SSL/TLS Configuration Scanner",
     "options": [
         {
             "name": "certinfo",
