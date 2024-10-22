@@ -440,9 +440,30 @@ def is_tool_installed(name):
 
 def install_tools():
     tools = {
-        "nmap": "nmap",
-        "gobuster": "gobuster",
-        "sqlmap": "sqlmap"
+        "nmap": {
+            "name": "nmap",
+            "install_cmd": {
+                "linux": "sudo apt-get install -y nmap",
+                "darwin": "brew install nmap",
+                "windows": "choco install nmap"
+            }
+        },
+        "gobuster": {
+            "name": "gobuster",
+            "install_cmd": {
+                "linux": "sudo apt-get install -y gobuster",
+                "darwin": "brew install gobuster",
+                "windows": "choco install gobuster"
+            }
+        },
+        "sqlmap": {
+            "name": "sqlmap",
+            "install_cmd": {
+                "darwin": "sudo apt-get install -y sqlmap",
+                "macos": "brew install sqlmap",
+                "windows": "choco install sqlmap"
+            }
+        }
     }
     for tool_name, command in tools.items():
         if not is_tool_installed(command):
