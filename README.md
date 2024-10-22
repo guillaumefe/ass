@@ -160,12 +160,14 @@ def install_tools():
                 "darwin": "brew install newtool",
                 "windows": "choco install newtool"
             }
-        }
+        },
+        # Additional tools...
     }
 ```
 
 **Alternative: Automate Installation**
 
+If you do not add the install_cmd property to the tools object in the install_tools function, the script will prompt you to install the tool manually.
 You can automate the installation process by including the installation commands directly. Be cautious with this approach, as it may require elevated privileges.
 
 ### Step 5: Update the Frontend (Optional)
