@@ -5,7 +5,7 @@ TOOLS_CONFIG = {
     # Existing tools...
     "dirsearch": {
         "type": "url",
-        "description": "Directory and File Enumeration Tool",
+        "description": "(Dirsearch) Directory and File Enumeration Tool",
         "options": [
             {
                 "name": "url",
